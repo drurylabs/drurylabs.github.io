@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>loom</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>loom</h1>
+<p>loom is a personal tool that keeps Gmail filters in text files. It runs
+on its owner's computer, from the command line. It is not a service, and
+it is not for sale or for public use.</p>
+
+<h2>What it does</h2>
+<p>loom reads the filters and labels of a Gmail account, and writes them
+to a file. When its owner changes the file, loom creates and deletes
+filters in Gmail so that Gmail matches the file. On request, it also
+applies the labels of a filter to the mail that is already in the
+account.</p>
+
+<h2>Access to Google data</h2>
+<p>loom uses the Gmail API with two scopes:</p>
+<ul>
+<li><code>gmail.settings.basic</code>, to read and change the filters.</li>
+<li><code>gmail.modify</code>, to read the mail, make labels, and change
+the labels of messages. loom never deletes mail for good.</li>
+</ul>
+<p>The <a href="privacy.html">privacy policy</a> says how loom treats this
+data.</p>
+
+<footer><a href="/">drurylabs</a></footer>
+</body>
+</html>
